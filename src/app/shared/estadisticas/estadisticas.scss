@@ -1,0 +1,9 @@
+:host {
+  display: block;
+}
+
+.estadisticas-card {
+  &:hover {
+    transform: translateY(-8px);
+  }
+}

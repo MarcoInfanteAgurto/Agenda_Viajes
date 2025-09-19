@@ -1,0 +1,53 @@
+// Estilos adicionales para el header si necesitas customizar algo específico
+// La mayoría del styling está manejado por Tailwind CSS
+
+.header-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+// Animación suave para el menú móvil
+.mobile-menu-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+  
+  &.mobile-menu-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease-out;
+  }
+}
+
+// Hover effect personalizado para los enlaces
+.nav-link {
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #f97316; // orange-500
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+// Estilo para el logo con efecto hover
+.logo-text {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  &:hover {
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}

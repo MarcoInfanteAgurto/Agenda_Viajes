@@ -1,0 +1,58 @@
+<div class="nosotros-page">
+  
+  <!-- Hero Section: "Nuestra Pasión por Viajar" -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 to-amber-50">
+    <div class="container mx-auto px-4 py-16 lg:py-24">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <!-- Texto principal centrado -->
+        <div class="text-center space-y-6 w-full">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            <span class="text-gray-800">Nuestra Pasión por</span>
+            <span class="text-blue-600 block">Viajar</span>
+          </h1>
+          
+          <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
+            Con más de 15 años de experiencia, somos especialistas 
+            en crear experiencias de viaje inolvidables que conectan a 
+            nuestros clientes con la belleza natural y cultural del Perú.
+          </p>
+        </div>
+
+        <!-- Imagen del equipo -->
+        <div class="relative">
+          <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+            <img 
+              src="https://v0-agencia-de-viajes-website.vercel.app/professional-travel-team-in-peru-mountains-landsca.jpg" 
+              alt="Nuestro equipo en las montañas del Perú"
+              class="w-full h-[500px] lg:h-[600px] object-cover transform hover:scale-105 transition-transform duration-700"
+            >
+            
+            <!-- Overlay con gradiente sutil -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+          </div>
+
+          <!-- Elementos decorativos en la imagen -->
+          <div class="absolute -top-4 -right-4 w-24 h-24 bg-blue-500/20 rounded-full blur-xl"></div>
+          <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-amber-500/20 rounded-full blur-xl"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Elementos decorativos de fondo -->
+    <div class="absolute top-10 left-10 w-20 h-20 border-2 border-blue-200 rounded-full opacity-50"></div>
+    <div class="absolute bottom-20 right-20 w-16 h-16 border-2 border-amber-200 rounded-full opacity-50"></div>
+    <div class="absolute top-1/2 left-4 w-2 h-2 bg-blue-400 rounded-full"></div>
+    <div class="absolute top-1/4 right-8 w-3 h-3 bg-amber-400 rounded-full"></div>
+  </section>
+
+  <!-- LLAMADAS A LOS COMPONENTES REUTILIZABLES -->
+  
+  <!-- Nuestra Historia -->
+  <app-hero></app-hero>
+
+  <!-- Estadísticas -->
+  <app-estadisticas></app-estadisticas>
+
+</div>

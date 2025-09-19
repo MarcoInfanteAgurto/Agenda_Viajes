@@ -1,0 +1,46 @@
+// Estilos adicionales para el componente card-destino
+// La mayoría de estilos están manejados por Tailwind CSS
+
+.card-destino {
+  // Animaciones personalizadas si las necesitas
+  &:hover {
+    .card-image {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.card-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+// Responsive adjustments
+@media (max-width: 640px) {
+  .card-container {
+    margin: 0 1rem;
+  }
+}
+
+// Custom scrollbar para la lista de incluye si es muy larga
+.incluye-list {
+  max-height: 120px;
+  overflow-y: auto;
+  
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 2px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 2px;
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+  }
+}

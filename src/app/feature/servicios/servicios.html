@@ -1,0 +1,40 @@
+<!-- Servicios Container -->
+<div class="min-h-screen bg-gray-50 py-8">
+  
+  <!-- Header Section -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        Nuestros Servicios
+      </h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Descubre experiencias únicas en Cañete con nuestros tours especializados
+      </p>
+    </div>
+  </div>
+
+  <!-- Tours Grid -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+      <app-card-destino 
+        *ngFor="let tour of toursData" 
+        [data]="tour"
+        [showReserveButton]="true"
+        class="transform hover:scale-105 transition-transform duration-300">
+      </app-card-destino>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="text-center bg-white rounded-2xl shadow-lg p-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">
+        ¿No encuentras lo que buscas?
+      </h2>
+      <p class="text-gray-600 mb-6">
+        Contacta con nosotros para crear un tour personalizado según tus necesidades
+      </p>
+      <button class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+        📷 Ver Todos los Paquetes
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<!-- Hero Section -->
+<section class="relative h-screen bg-cover bg-center bg-no-repeat overflow-hidden">
+    <!-- Background image con efecto oscuro -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-45"
+        style="background-image: url('https://coviperu.com/wp-content/uploads/2020/01/Cerro_Azul.jpg')">
+    </div>
+    <!-- Main content -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+        <!-- Main heading -->
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+            Descubre los<br>
+            Secretos de
+            <span class="text-orange-400">Cañete</span>
+        </h1>
+        <!-- Description -->
+        <p class="text-lg md:text-xl lg:text-2xl mb-12 max-w-4xl leading-relaxed font-light">
+            Vive experiencias únicas en los destinos más<br>
+            espectaculares del Perú con nuestros tours<br>
+            personalizados y paquetes económicos.
+        </p>
+        <!-- Action buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 mb-16">
+            <button (click)="onVerPaquetes()"
+                class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 flex items-center gap-2 min-w-[180px] justify-center">
+                Ver Paquetes
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+            <button (click)="onConocerMas()"
+                class="border-2 border-white text-white hover:bg-white hover:text-gray-800 font-semibold py-4 px-8 rounded-lg transition-colors duration-300 min-w-[180px]">
+                Conocer Más
+            </button>
+        </div>
+        <!-- Scroll down indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <button (click)="onScrollDown()"
+            class="animate-bounce bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full p-4 transition-colors duration-300 flex items-center justify-center">
+            <!-- Ícono de mouse con rueda -->
+            <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <rect x="9" y="2" width="6" height="20" rx="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="12" y1="6" x2="12" y2="10" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+    </div>
+    <!-- Decorative elements - boats in the distance -->
+    <div class="absolute bottom-32 left-12 opacity-60">
+        <div class="w-4 h-6 bg-white transform rotate-45"></div>
+    </div>
+    <div class="absolute bottom-28 left-20 opacity-40">
+        <div class="w-3 h-4 bg-white transform rotate-45"></div>
+    </div>
+    <div class="absolute bottom-40 right-24 opacity-50">
+        <div class="w-3 h-5 bg-white transform rotate-45"></div>
+    </div>
+</section>
+
+<!-- Destinos Populares Section -->
+<app-destinos-populares></app-destinos-populares>
+
+<!-- Por Qué Elegirnos Section -->
+<app-por-que-elegirnos></app-por-que-elegirnos>
+
+<!-- Testimonios Section -->
+<app-testimonios></app-testimonios>
